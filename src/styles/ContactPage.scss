@@ -1,0 +1,29 @@
+@import './config';
+
+.contact {
+    $self: &;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__info {
+      &-text {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+        text-align: center;
+      }
+    }
+
+    &__map {
+      height: 400px;
+      width: 400px;
+      z-index: 2;
+
+      &-container {
+        border-radius: 10px;
+        box-shadow: 0 0 2px black;
+      }
+    }
+  }
