@@ -17,7 +17,7 @@ class App extends Component {
           <header>
             <Header />
           </header>
-          <main>
+          <main className='main'>
             <Main />
           </main>
           <footer>
