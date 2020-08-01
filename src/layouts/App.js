@@ -13,15 +13,17 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <header>
-          <Header />
-        </header>
-        <main>
-          <Main />
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        <div className='wrapper'>
+          <header>
+            <Header />
+          </header>
+          <main>
+            <Main />
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </div>
       </Router>
     );
   }

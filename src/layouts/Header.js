@@ -4,7 +4,7 @@ import '../styles/Header.scss';
 
 const Header = () => {
   return (
-    <div>
+    <div className='header'>
       <Navigation />
       <div className="header__menu-btn">
         <div className="header__menu-btn-line"></div>
@@ -19,7 +19,7 @@ const Header = () => {
         <a className="header__social-link" href="https://www.facebook.com/schroniskodlabezdomnychpsowlomza" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-square fa-2x"></i></a>
       </div>
       <div className="header__request">
-        <span className="header__request-text">Podaruj nam <strong> 1%</strong> KRS: <strong> 0000120679 </strong></span>
+        <span className="header__request-text">Podaruj nam <strong className="header__request-text--mark"> 1%</strong > KRS: <strong className="header__request-text--mark"> 0000120679 </strong></span>
       </div>
     </div>
   );
