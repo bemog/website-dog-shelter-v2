@@ -1,0 +1,54 @@
+@import '_config.scss';
+
+.adoption {
+    $self:&;
+    &__title {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+
+        &-card {
+            height: 300px;
+            width: 300px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            position: relative;
+            z-index: 1;
+            border-radius: 20px;
+            box-shadow: 0 0 5px black;
+
+            &-link {
+                &:hover .adoption__container-card-link-image,
+                &:hover .adoption__container-card-link-name {
+                  transform: scale(1.1);
+                }
+        
+                &-image {
+                  height: 100%;
+                  width: 100%;
+                  border-radius: 20px;
+                  transition: .3s;
+                }
+        
+                &-name {
+                  position: absolute;
+                  left: 20px;
+                  bottom: 20px;
+                  padding: 5px 10px;
+                  background-color: $secondary-color;
+                  border-radius: 10px;
+                  color: white;
+                  font-size: 2rem;
+                  transition: .3s;
+                }
+            }
+        }
+    }
+}
