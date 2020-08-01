@@ -1,0 +1,29 @@
+@import '_config.scss';
+
+.volunteering {
+    $self:&;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+    &__title {
+      margin: 10px 0 20px 0;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+    }
+
+    &__gallery {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-top: 10px;
+
+      &-picture {
+        max-height: 300px;
+        margin: 10px;
+        border-radius: 20px;
+      }
+    }
+  }
