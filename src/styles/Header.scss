@@ -14,7 +14,6 @@
       width: 50%;
       padding-top: 10px;
       z-index: 1;
-    //   transform: translate(50%, -100%);
       transform: translateX(50%);
       transition: .3s;
 
@@ -74,6 +73,7 @@
       transform: translateY(0);
       transition: .3s;
       cursor: pointer;
+      display: none;
 
         &--hide {
             display: none;
@@ -105,7 +105,7 @@
     }
 
     &__title {
-      margin: 60px 10px 0 10px;
+      margin: 80px 10px 0 10px;
       color: white;
       text-align: center;
     }

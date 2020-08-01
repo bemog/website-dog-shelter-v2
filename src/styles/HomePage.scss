@@ -1,0 +1,74 @@
+@import '_config.scss';
+
+.home {
+    $self:&;
+    position: relative;
+    max-width: none;
+
+    &__welcome {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 30%;
+      z-index: 3;
+      transform: translateY(100%);
+      animation: showDog .8s ease-out forwards;
+
+      &-dogtail {
+        position: absolute;
+        left: 45%;
+        bottom: 13vh;
+        opacity: .6;
+        transform-origin: bottom center;
+        animation: wagTail .3s linear infinite;
+        animation-direction: alternate;
+
+        &-image {
+          height: 20vw;
+          max-height: 200px;
+        }
+      }
+
+      &-dog {
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        width: 100%;
+        max-width: 800px;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-image {
+          max-height: 30vh;
+          max-width: 100%;
+        }
+      }
+    }
+}
+
+@keyframes wagTail {
+    0% {
+      transform: rotate(45deg) skew(-15deg, -15deg);
+    }
+  
+    50% {
+      transform: rotate(0) skewX(0);
+    }
+  
+    100% {
+      transform: rotate(-45deg) skew(15deg, 15deg);
+    }
+  }
+
+@keyframes showDog {
+    0% {
+      transform: translateY(100%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
