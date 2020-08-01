@@ -6,7 +6,6 @@
 body {
     min-height: 100vh;
     width: 100%;
-
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
 }
@@ -16,6 +15,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-rows: 250px 1fr 30px;
+    background-color: $tertiary-color;
 }
 
 
