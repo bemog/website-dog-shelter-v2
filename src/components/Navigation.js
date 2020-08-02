@@ -12,7 +12,10 @@ const links = [
 const Navigation = ({ showNav }) => {
   const items = links.map(item => (
     <li key={item.name} className="header__navigation-list-item">
-      <NavLink to={item.path} className="header__navigation-list-item-link">
+      <NavLink
+        to={item.path}
+        className="header__navigation-list-item-link"
+      >
         <i className={item.icon}></i>
         <span className="header__navigation-list-item-title">{item.name}</span>
       </NavLink>
@@ -24,7 +27,7 @@ const Navigation = ({ showNav }) => {
       <ul className="header__navigation-list">
         {items}
       </ul>
-    </nav>
+    </nav >
   );
 }
 

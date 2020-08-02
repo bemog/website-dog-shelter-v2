@@ -16,10 +16,13 @@ class Header extends React.Component {
   render() {
     return (
       <div className='header'>
-        <Navigation showNav={this.state.showNav} />
+        <Navigation
+          showNav={this.state.showNav}
+
+        />
         <div
-          onClick={this.handleShowMenu}
           className={this.state.showNav ? "header__menu-btn header__menu-btn--close" : "header__menu-btn"}
+          onClick={this.handleShowMenu}
         >
           <div className="header__menu-btn-line"></div>
           <div className="header__menu-btn-line"></div>
