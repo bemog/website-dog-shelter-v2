@@ -36,6 +36,7 @@ const dogsCards = [
 const AdoptionPage = () => {
   const dogs = dogsCards.map(dog => (
     <DogCard
+      key={dog.name}
       name={dog.name}
       image={dog.image}
       link={dog.link}
@@ -45,7 +46,7 @@ const AdoptionPage = () => {
   return (
     <div className='adoption'>
       <h2 className='adoption__title'>Czekają na adopcję:</h2>
-      <div class="adoption__container">
+      <div className="adoption__container">
         {dogs}
       </div>
     </div>
