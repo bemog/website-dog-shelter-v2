@@ -2,8 +2,12 @@
 
 .home {
     $self:&;
-    position: relative;
     max-width: none;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    background-color: $primary-color;
 
     &__welcome {
       position: fixed;
