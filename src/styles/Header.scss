@@ -62,8 +62,8 @@
 
   &__menu-btn {
     position: fixed;
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     width: 45px;
     height: 40px;
     padding: 5px;
@@ -78,12 +78,8 @@
     background-color: $primary-color;
     display: none;
 
-      &--hide {
-          display: none;
-      }
-
       &--close {
-          transform: translateY(125%) rotate(180deg);
+          transform: translateY(130%) rotate(180deg);
       }
 
       &--close .header__menu-btn-line:nth-of-type(1) {

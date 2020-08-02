@@ -9,7 +9,7 @@ const links = [
   { name: 'Kontakt', path: '/contact', icon: 'fas fa-envelope fa-2x' },
 ]
 
-const Navigation = () => {
+const Navigation = ({ showNav }) => {
   const items = links.map(item => (
     <li key={item.name} className="header__navigation-list-item">
       <NavLink to={item.path} className="header__navigation-list-item-link">
@@ -20,7 +20,7 @@ const Navigation = () => {
   ))
 
   return (
-    <nav className="header__navigation">
+    <nav className={showNav ? "header__navigation" : "header__navigation header__navigation--hide"}>
       <ul className="header__navigation-list">
         {items}
       </ul>
