@@ -30,6 +30,7 @@
             box-shadow: 0 0 5px black;
             opacity: 0;
             animation: show 1s forwards;
+            animation-delay: .1s;
 
             &-link {
                 &:hover .adoption__container-card-link-image,

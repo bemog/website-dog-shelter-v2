@@ -25,6 +25,7 @@
       z-index: 3;
       transform: translateY(100%);
       animation: showDog .8s ease-out forwards;
+      animation-delay: .1s;
 
       &-dogtail {
         position: absolute;

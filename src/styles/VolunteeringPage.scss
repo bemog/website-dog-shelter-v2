@@ -13,12 +13,14 @@
       margin: 10px 0 20px 0;
       transform: translateY(1000px);
       animation: slide-up 1s forwards;
+      animation-delay: .1s;
     }
 
     &__text {
       margin-bottom: 20px;
       transform: translateY(1000px);
       animation: slide-up 1s forwards;
+      animation-delay: .1s;
     }
 
     &__gallery {
