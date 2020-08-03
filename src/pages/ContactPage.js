@@ -5,7 +5,7 @@ const ContactPage = () => {
     return (
         <div className="contact">
             <div className="contact__info">
-                <p className="contact__info-text">Schronisko dla Bezdomnych Psów w Łomży<br />18-400 Łomża,<br /> ul. Wojska Polskiego 136</p>
+                <p className="contact__info-text"><strong> Schronisko dla Bezdomnych Psów w Łomży</strong><br />18-400 Łomża,<br /> ul. Wojska Polskiego 136</p>
                 <p className="contact__info-text"><i className="fas fa-phone"></i> 660464642</p>
                 <p className="contact__info-text"><i className="fas fa-envelope"></i> schroniskoarka@gmail.com</p>
                 <p className="contact__info-text">Adopcje w godzinach: <br /> pon.-piątek 9.00-14.00 <br /> sobota 10.00-12.00</p>

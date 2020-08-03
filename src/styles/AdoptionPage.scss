@@ -28,6 +28,8 @@
             z-index: 1;
             border-radius: 20px;
             box-shadow: 0 0 5px black;
+            opacity: 0;
+            animation: show 1s forwards;
 
             &-link {
                 &:hover .adoption__container-card-link-image,
@@ -59,3 +61,9 @@
 }
 
 @import '_mediaq';
+
+@keyframes show {
+  100% {
+    opacity: 1;
+  }
+}
