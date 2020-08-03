@@ -18,7 +18,6 @@ class Header extends React.Component {
       <div className='header'>
         <Navigation
           showNav={this.state.showNav}
-
         />
         <div
           className={this.state.showNav ? "header__menu-btn header__menu-btn--close" : "header__menu-btn"}

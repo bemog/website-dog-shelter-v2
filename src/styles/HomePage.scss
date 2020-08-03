@@ -9,6 +9,13 @@
     position: relative;
     background-color: $primary-color;
 
+    &__title {
+      margin-top: 150px;
+      font-size: 3rem;
+      color: white;
+      text-align: center;
+    }
+
     &__welcome {
       position: fixed;
       left: 0;

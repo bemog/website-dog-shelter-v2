@@ -6,6 +6,7 @@ import dogTail from '../images/dogtail.png';
 const HomePage = () => {
   return (
     <div className="home">
+      <h2 className="home__title">Witaj na naszej stronie!</h2>
       <div className="home__welcome">
         <div className="home__welcome-dogtail">
           <img className="home__welcome-dogtail-image" src={dogTail} alt="Ogon psa" />

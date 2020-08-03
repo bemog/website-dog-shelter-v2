@@ -7,9 +7,6 @@ import Footer from './Footer';
 import PawsContainer from './PawsBackground';
 
 class App extends Component {
-  state = {
-
-  }
 
   render() {
     return (
