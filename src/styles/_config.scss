@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-$primary-color: #535B73;
-$secondary-color: #F28157;
-$tertiary-color: #F2EBDC;
-$quaternary-color: #535B73;
+$primary-color: #535b73;
+$secondary-color: #f28157;
+$tertiary-color: #f2ebdc;
+$quaternary-color: #535b73;
 
 * {
   margin: 0;
@@ -12,18 +12,18 @@ $quaternary-color: #535B73;
 }
 
 li {
-  list-style: none
+  list-style: none;
 }
 
 a {
   color: white;
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 img {
   z-index: 1;
 }
-
 
 @mixin mediaSmall {
   @media screen and (max-width: 550px) {
@@ -50,7 +50,7 @@ img {
 }
 
 @mixin mediaSmallLandscape {
-  @media screen and (orientation:landscape) and (max-height:500px) {
+  @media screen and (orientation: landscape) and (max-height: 500px) {
     @content;
   }
 }

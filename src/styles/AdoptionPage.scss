@@ -1,64 +1,64 @@
 @import '_config.scss';
 
 .adoption {
-    $self:&;
-    margin: 0 auto;
+  $self: &;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1100px;
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 20px;
-    max-width: 1100px;
-    &__title {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding: 20px;
-      text-align: center;
-    }
+    text-align: center;
+  }
 
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 
-        &-card {
-            height: 300px;
-            width: 300px;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            position: relative;
-            z-index: 1;
-            border-radius: 20px;
-            box-shadow: 0 0 5px black;
-            opacity: 0;
-            animation: show 1s forwards;
-            animation-delay: .1s;
+    &-card {
+      height: 300px;
+      width: 300px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      position: relative;
+      z-index: 1;
+      border-radius: 20px;
+      box-shadow: 0 0 5px black;
+      opacity: 0;
+      animation: show 1s forwards;
+      animation-delay: 0.1s;
 
-            &-link {
-                &:hover .adoption__container-card-link-image,
-                &:hover .adoption__container-card-link-name {
-                  transform: scale(1.1);
-                }
-        
-                &-image {
-                  height: 100%;
-                  width: 100%;
-                  border-radius: 20px;
-                  transition: .3s;
-                }
-        
-                &-name {
-                  position: absolute;
-                  left: 20px;
-                  bottom: 20px;
-                  padding: 5px 10px;
-                  background-color: $secondary-color;
-                  border-radius: 10px;
-                  color: white;
-                  font-size: 2rem;
-                  transition: .3s;
-                }
-            }
+      &-link {
+        &:hover .adoption__container-card-link-image,
+        &:hover .adoption__container-card-link-name {
+          transform: scale(1.1);
         }
+
+        &-image {
+          height: 100%;
+          width: 100%;
+          border-radius: 20px;
+          transition: 0.3s;
+        }
+
+        &-name {
+          position: absolute;
+          left: 20px;
+          bottom: 20px;
+          padding: 5px 10px;
+          background-color: $secondary-color;
+          border-radius: 10px;
+          color: white;
+          font-size: 2rem;
+          transition: 0.3s;
+        }
+      }
     }
+  }
 }
 
 @import '_mediaq';
