@@ -1,49 +1,48 @@
 @import '_config.scss';
 
 .about {
-    $self: &;
-    padding: 20px;
-    margin: 0 auto;
-    max-width: 1100px;
+  $self: &;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &__container {
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
 
-    &__container {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      z-index: 2;
+    &:nth-of-type(1) {
+      transform: translateX(-150%);
+      animation: slide-in 1s forwards;
+      animation-delay: 0.3s;
+    }
 
-      &:nth-of-type(1) {
-        transform: translateX(150%);
-        animation: slide-in 1s forwards;
-        animation-delay: .3s;
-      }
+    &:nth-of-type(2) {
+      transform: translateX(+150%);
+      animation: slide-in 1s forwards;
+      animation-delay: 0.3s;
+    }
 
-      &:nth-of-type(2) {
-        transform: translateX(-150%);
-        animation: slide-in 1s forwards;
-        animation-delay: .3s;
-      }
+    &-text {
+      text-align: justify;
+    }
 
-      &-text {
-        text-align: justify;
-      }
-
-      &-image {
-        width: 30%;
-        max-width: 300px;
-        min-width: 250px;
-        margin: 20px;
-        border-radius: 20px;
-      }
+    &-image {
+      width: 30%;
+      max-width: 300px;
+      min-width: 250px;
+      margin: 20px;
+      border-radius: 20px;
     }
   }
+}
 
-  @keyframes slide-in {
-
-    100% {
-      transform: translateX(0);
-    }
+@keyframes slide-in {
+  100% {
+    transform: translateX(0);
   }
+}

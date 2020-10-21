@@ -50,7 +50,7 @@ img {
 }
 
 @mixin mediaSmallLandscape {
-  @media screen and (orientation: landscape) and (max-height: 500px) {
+  @media screen and (orientation: landscape) and (max-height: 600px) {
     @content;
   }
 }

@@ -219,11 +219,140 @@
 }
 
 @include mediaSmallLandscape {
-  .home {
-    height: 130px;
+  .wrapper {
+    grid-template-rows: 150px 1fr 30px;
   }
 
-  .footer {
-    background-color: darken($quaternary-color, 10%);
+  .header {
+    $self: &;
+    height: 100%;
+    padding: 10px 10px 10px 60px;
+    position: relative;
+    background-color: $primary-color;
+
+    &__title {
+      &-upper {
+        font-size: 1.7rem;
+      }
+
+      &-lower {
+        font-size: 1rem;
+      }
+    }
+
+    &__navigation {
+      position: fixed;
+      top: 0;
+      left: -30px;
+      width: 60px;
+      height: 100%;
+      padding-top: 0;
+      border-right: 1px solid white;
+      background-color: $primary-color;
+
+      &-list {
+        height: 100%;
+        flex-direction: column;
+
+        &-item {
+          &:hover i {
+            transform: scale(1);
+            opacity: 1;
+          }
+
+          &:hover .header__navigation-list-item-title {
+            opacity: 0;
+          }
+
+          i {
+            width: 45px;
+          }
+        }
+      }
+    }
+
+    &__title {
+      margin: 10px 10px 0 10px;
+      color: white;
+      text-align: center;
+    }
+
+    &__social {
+      position: absolute;
+      right: 10px;
+      bottom: 55px;
+      z-index: 1;
+    }
+
+    &__request {
+      left: 60px;
+    }
   }
+
+  .main {
+    padding-left: 60px;
+
+    .home {
+      padding: 10px;
+
+      &__title {
+        margin-top: 10px;
+        font-size: 1.5rem;
+      }
+
+      &__welcome {
+        height: 30%;
+
+        &-dogtail {
+          left: 50%;
+          bottom: 13vh;
+
+          &-image {
+            height: 20vh;
+            max-height: 150px;
+          }
+        }
+
+        &-dog {
+          left: 53%;
+          width: 100%;
+          max-width: 300px;
+
+          &-image {
+            max-height: 50vh;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .adoption {
+      padding: 0 20px 20px 20px;
+    }
+
+    .contact {
+      $self: &;
+      height: 100%;
+      padding: 20px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+
+      &__map {
+        display: flex;
+        justify-content: center;
+        &-container {
+          height: 300px;
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: darken($quaternary-color, 10%);
 }
